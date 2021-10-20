@@ -1,0 +1,33 @@
+h2 {
+    color: yellow;
+    font-family: Trebucet MS;
+    text-align: center;
+}
+
+.kotak {
+    padding: 50px;
+    width: 100px;
+    color: #fff;
+    margin: 10px;
+    background: greenyellow;
+}
+
+#kotak {
+    width: 400px;
+    color: #fff;
+    background: blue;
+    padding: 50px;
+}
+
+body {
+    background: url("img/cat.jpg"), url("img/girl.jpeg");
+    background-repeat: no-repeat, repeat;
+    color: white;
+}
+
+
+
+
+
+
+

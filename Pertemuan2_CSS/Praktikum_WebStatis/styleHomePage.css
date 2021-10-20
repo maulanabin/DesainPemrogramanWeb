@@ -1,0 +1,106 @@
+.container {
+    width: 80px;
+    width: 100%;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: "Quicksand", sans-serif;
+}
+
+.header-top {
+    height: 80px;
+    width: 100%;
+    background-color: mistyrose;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: inline;
+}
+
+.logo {
+    width: 90px;
+    margin-left: 15px;
+}
+
+.header-left {
+    float: left;
+}
+
+.header-right1:visited {
+   color: white;
+}
+
+.header-right1 {
+    float: right;
+    background-color: #68C2E8;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 35px;
+    color: white;
+    
+}
+
+.header-right1:hover {
+    background-color: lightskyblue;
+}
+
+.header-right1 a {
+    line-height: 40px;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.heading {
+    text-align: center;
+    color: #68C2E8;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+header {
+    display: inline;
+}
+
+main {
+    padding: 20px;
+}
+
+#content {
+    width: 1000px;
+    padding: 0;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+h2 {
+    padding-top: 30px;
+    color: black;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    font-size: 18px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+footer {
+    padding: 20px;
+    color: #68C2E8;
+    background-color: mistyrose;
+}
+
+footer p {
+    font-weight: bold;
+    text-align: center;
+}
+
