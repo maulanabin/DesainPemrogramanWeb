@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Siswa</title>
+    <link rel="stylesheet" type="text/css" href="styleForm.css">
+    <link rel="icon" type="image/gif/png" href="img/logo.png">
+    
+</head>
+<body>
+    <header class="header-top">
+        <div class="container">
+            <div class="header-left">
+                <img src="img/logo.png" class="logo">
+            </div>
+            <div class="header-right">
+                <a href="my_profile/myProfile.html" target="_blank" class="link">Profile</a>
+            </div>
+            <div class="heading">
+                <h1>Registrasi Siswa</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <p align="right" class="tanggal">
+                <label>Tanggal:</label>
+                <input type="text" name="tanggal" placeholder="Hari, Tanggal">
+            </p>
+            <fieldset>
+                <legend>Informasi Pribadi</legend>
+                <p></p>
+                    <label>Nama Lengkap: </label>
+                    <input type="text" name="nama" placeholder="Nama Lengkap..." class="nama" id="nama-siswa">
+                </p>
+                <p>
+                    <label>Tempat Lahir: </label>
+                    <input type="text" name="tempat" placeholder="Tempat Lahir..." class="tempat">
+                </p>
+                <p>
+                    <label>Tanggal Lahir: </label>
+                    <input type="date" class="lahir">
+                </p>
+                <p>
+                    <label>Jenis Kelamin: </label>
+                    <label class="jenis"><input type="radio" name="jeniskelamin" value="Laki-laki">Laki-laki</label>
+                    <label class="jenis"><input type="radio" name="jeniskelamin" value="Perempuan">Perempuan</label>
+                </p>
+                <p>
+                    <label>Agama: </label>
+                    <select name="agama" class="agama">
+                        <option value="islam">Islam</option>
+                        <option value="kristen">Kristen</option>
+                        <option value="budha">Budha</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+            </fieldset>
+            <br>
+            <button type="button" onclick="myFunction()">Simpan</button>
+            <p id="demo"></p>
+            <br>
+            <fieldset>
+                <legend>Informasi Kontak</legend>
+                <p>
+                    <label>Alamat: </label>
+                    <textarea name="alamat" cols="30" rows="5" placeholder="Jl..." class="alamat"></textarea>
+                </p>
+                <p>
+                    <label>Provinsi: </label>
+                    <input type="text" name="provinsi" placeholder="Provinsi..." class="provinsi">
+                </p>
+                <p>
+                    <label>Kota:</label>
+                    <input type="text" name="kota" placeholder="Kota..." class="kota">
+                </p>
+                <p>
+                    <label>No. Telp: </label>
+                    <input type="text" name="telp" placeholder="08xx..." class="telp" id="no-telepon">  
+                </p>
+                <p>
+                    <label>Email: </label>
+                    <input type="email" name="email" placeholder="email@contoh.com" class="email">
+                </p>
+            </fieldset>
+            <br>
+            <button type="button" onclick="myFunction2()">Simpan</button>
+            <p id="demo2"></p>
+            <br>
+            <fieldset>
+                <legend>No. Siswa</legend>
+                <p>
+                    <label>No Absen: </label>
+                    <input type="text" name="no" placeholder="1 sampai dengan 30" class="no" id="no-siswa">
+                </p>
+            </fieldset>
+            <br>
+            <button type="button" onclick="myFunction3()">Simpan</button>
+            <p id="demo3"></p>
+            <br>
+        </form>
+
+        <div class="next-page">
+            <a href="form_kedua/formTugas2.html" target="_blank" class="link">Next Page</a>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Praktikum Desain dan Pemrograman Web &#169 2021, Maulana Bintang Irfansyah</p>
+    </footer>
+
+        </form>
+    
+    <script src="script.js"></script>
+
+
+</body>
+</html>

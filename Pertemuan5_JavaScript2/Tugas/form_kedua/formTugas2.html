@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menambahkan Mata Pelajaran</title>
+    <link rel="stylesheet" type="text/css" href="styleForm.css">
+    <link rel="icon" type="image/gif/png" href="../img/logo.png">
+    
+</head>
+<body>
+    <header class="header-top">
+        <div class="container">
+            <div class="header-left">
+                <img src="../img/logo.png" class="logo">
+            </div>
+            <div class="header-right">
+                <a href="../my_profile/myProfile.html" target="_blank" class="link">Profile</a>
+            </div>
+            <div class="heading">
+                <h1>Menambahkan Mata Pelajaran</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <form> 
+            <fieldset>
+                <legend>Informasi Mapel</legend>
+                <p>
+                    <label>Nama Mapel: </label>
+                    <input type="text" name="nama" placeholder="Nama Mata Pelajaran..." class="nama" id="nama-mapel">
+                </p>
+                <p>
+                    <label>Kode Mapel: </label>
+                    <input type="text" name="kode" placeholder="Kode Mata Pelajaran..." class="kode">
+                </p>
+            </fieldset>
+            <br>
+            <button type="button" onclick="myFunction()">Simpan</button>
+            <p id="demo"></p>
+            <br>
+            <fieldset>
+                <legend>Pengajar Mapel</legend>
+                <p>
+                    <label>Nama Guru: </label>
+                    <input type="text" name="guru" placeholder="Guru Pengajar..." class="guru">
+                </p>
+                <p>
+                    <label>No. Telp: </label>
+                    <input type="text" name="telp" placeholder="08xx..." class="telp" id="no-telepon">  
+                </p>
+                <p>
+                    <label>Email: </label>
+                    <input type="email" name="email" placeholder="email@contoh.com" class="email">
+                </p>
+            </fieldset>
+            <br>
+            <button type="button" onclick="myFunction2()">Simpan</button>
+            <p id="demo2"></p>
+            <br>
+            <fieldset>
+                <legend>No. Mapel</legend>
+                <p>
+                    <label>No Mapel: </label>
+                    <input type="text" name="no" placeholder="1 sampai dengan 10" class="no" id="no-mapel">
+                </p>
+            </fieldset>
+            <br>
+            <button type="button" onclick="myFunction3()">Simpan</button>
+            <p id="demo3"></p>
+            <br>
+        </form>
+
+        <div class="next-page">
+            <a href="../form_ketiga/formTugas3.html" target="_blank" class="link">Next Page</a>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Praktikum Desain dan Pemrograman Web &#169 2021, Maulana Bintang Irfansyah</p>
+    </footer>
+
+        </form>
+    
+    <script src="script.js"></script>
+
+
+</body>
+</html>

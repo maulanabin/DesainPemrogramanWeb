@@ -1,0 +1,150 @@
+.container {
+    width: 80px;
+    width: 100%;
+} 
+
+body {
+    background-color: lavenderblush;
+    font-family: "Quicksand", sans-serif;
+}
+
+.header-top {
+    height: 80px;
+    width: 100%;
+    background-color:orchid;
+    display: inline;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: inline;
+}
+
+.logo {
+    width: 90px;
+    margin-left: 15px;
+}
+
+.header-left {
+    float: left;
+}
+
+.header-right:visited {
+    color: white;
+}
+
+.header-right {
+    float: right;
+    background-color: #68C2E8;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 35px;
+    color: white;
+    
+}
+
+.header-right:hover {
+    background-color: lightskyblue;
+}
+
+.header-right a {
+    line-height: 40px;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.heading {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+main {
+    padding: 20px;
+    position: relative;
+}
+
+form {
+    padding-top: 80px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+p {
+    margin: 5px;
+    font-weight:100;
+}
+
+.tanggal {
+    padding-right: 50px;
+}
+
+.nama {
+    margin-left: 10px;
+}
+.kode {
+    margin-left: 16.7px;
+}
+
+.guru {
+    margin-left: 25px;
+}
+.kota {
+    margin-left: 72px;
+}
+.telp {
+    margin-left: 48px;
+}
+.no {
+    margin-left: 35px;
+}
+
+.email {
+    margin-left: 65px;
+}
+.agama {
+    margin-left: 57px;
+}
+
+.next-page {
+    background-color: #68C2E8;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: white;
+    
+}
+
+.next-page:hover {
+    background-color: lightskyblue;
+}
+
+.next-page a {
+    line-height: 40px;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+footer {
+    padding: 20px;
+    position: relative;
+    color: white;
+    background-color: orchid;
+}
+
+footer p {
+    font-weight: bold;
+    text-align: center;
+}
