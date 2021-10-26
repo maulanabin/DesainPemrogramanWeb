@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AJAX pada jQuery</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("#box").load("test-content.html");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="box">
+        <h2>Klik tombol untuk menampilan konten</h2>
+    </div>
+    <button type="button">Klik Saya</button>
+</body>
+</html>
