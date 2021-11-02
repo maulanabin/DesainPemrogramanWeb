@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>Cek Harga</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="UTF-8" />
+	   
+     <style>
+          .tombol{
+          background:#2C97DF;
+          color:white;
+          border-top:0;
+          border-left:0;
+          border-right:0;
+          border-bottom:5px solid #2A80B9;
+          padding:10px 20px;
+          text-decoration:none;
+          font-family:sans-serif;
+          font-size:11pt;
+         }
+        </style>
+      <link rel="stylesheet" href="CekHarga.css" type="text/css">
+      </head>
+
+      <body>
+      <h1 class="head">Cek Harga Maulana Laundry</h1>
+      <div class="porduct-order-agile" id="form">			
+        <div class="identitas">
+
+        <p>Berat</p>      
+        <input type="text" id="berat" SIZE="30" placeholder="Masukkan berat cucian">
+        <br><br>
+        
+            <b>Jenis</b>
+            <br>
+            <select id="jenis"></select>
+            <br><br>
+
+            <b>Kecepatan</b>
+            <br>
+            <select id="kecepatan"></select>
+            <br><br>
+
+            <b>Membership</b>
+            <br>
+            <select id="membership"></select>
+            <br><br>
+
+        <button onclick="proses()" class="tombol">Submit</button>
+        <br><br>
+        <div id="cetak"></div>
+        <br><br>
+        </div>
+		  <br>
+       <a href="Home.html"><input type="submit" Class ="tombol" value="Kembali Home"> </a>
+
+
+	   <script>
+           var jenis = ["Cuci Kering", "Cuci Setrika", "Setrika"];
+      var select_jenis = document.getElementById("jenis");
+
+        for (var i = 0; i < jenis.length; i++) {
+            var opj = jenis[i];
+            var ej = document.createElement("option");
+            ej.textContent = opj;
+            ej.value = opj;
+            select_jenis.appendChild(ej);}
+
+            var kecepatan = ["Reguler", "Ekspress"];
+      var select_kecepatan = document.getElementById("kecepatan");
+
+        for (var i = 0; i < kecepatan.length; i++) {
+            var opk = kecepatan[i];
+            var ek = document.createElement("option");
+            ek.textContent = opk;
+            ek.value = opk;
+            select_kecepatan.appendChild(ek);}
+
+            var membership = ["Non Member", "Member"];
+            var select_membership = document.getElementById("membership");
+
+        for (var i = 0; i < membership.length; i++) {
+            var opm = membership[i];
+            var em = document.createElement("option");
+            em.textContent = opm;
+            em.value = opm;
+            select_membership.appendChild(em);}
+
+	   function proses() {
+            var berat = document.getElementById("berat").value;
+            var jenis = document.getElementById("jenis").value;
+            var kecepatan = document.getElementById("kecepatan").value;
+            var membership  = document.getElementById("membership").value;
+            var harga;
+            var diskon;
+
+            if (jenis == "Cuci Setrika") {
+                harga = 8000;
+            } else if (jenis == "Setrika") {
+                harga = 6000;
+            } else if (jenis == "Cuci Kering") {
+                harga = 5000;
+            } else {
+                harga = 0;
+            }
+
+            if (kecepatan == "Reguler") {
+                harga + 0;
+            } else if (kecepatan == "Ekspress") {
+                harga + 2000;
+            } else {
+                harga;
+            }
+
+            if (membership == "Non Member") {
+                diskon = 0;
+            } else if (membership == "Member") {
+                diskon = harga * 0.1;
+            } else {
+                diskon = "Tidak ada";
+            }
+
+            if (membership == "Member") {
+                if (berat == 1) {
+                    diskon = harga * 0.05;
+                } else if (berat <= 3) {
+                    diskon = harga * 0.07;
+                } else {
+                    diskon = harga * 0.1;
+                }
+            } else {
+                if (berat <= 3) {
+                    diskon = 0;
+                } else if (berat <= 5) {
+                    diskon = (harga * berat) * 0.05;
+                } else {
+                    diskon = harga * 0.05;
+                }
+            }
+            var total = harga * berat;
+            var total_bayar = (harga * berat) - diskon;
+            var cetak = "CEK HARGA  </br>" +
+                "------------------------------- </br>" +
+                "Berat Cucian   : " + berat + " kg </br>" +
+                "Jenis          : " + jenis + "</br>" +
+                "Kecepatan      : " + kecepatan + "</br>" +
+                "Membership     : " + membership + "</br>" +
+                "------------------------------- </br>" +
+                "Total : " + total + "</br>" +
+                "Diskon  : " + diskon + "</br>" +
+                "******************************* </br>" +
+                "Total Bayar : " + total_bayar + "</br>" +
+                "</br>" + "</br>" +
+                " MAULANA LAUNDRY " ;
+            document.getElementById("cetak").innerHTML = cetak;
+        }
+	   </script>
+   </body>
+
+</html>
