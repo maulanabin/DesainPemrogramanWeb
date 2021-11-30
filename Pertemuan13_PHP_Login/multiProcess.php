@@ -1,0 +1,18 @@
+<?php
+    include "myConnection.php";
+
+    $username = $_POST["username"];
+    $password = md5($_POST["password"]);
+
+    $query = "SELECT * FROM user WHERE username = '$username' && password = '$password'";
+    $result = mysqli_query($connect, $query);
+    $row = mysqli_fetch_assoc($result);
+
+    if ($row['level'] == "1") {
+        header("Location:adminHome.html");
+    } else if ($row['level'] == "2") {
+        header("Location:guestHome.html");
+    } else {
+        header("Location: loginForm.php?error=failed");
+    }
+?>
